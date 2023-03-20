@@ -18,3 +18,7 @@ div{
 .marquee {
     font-size: 80px;
 }
+
+.imagen:hover img {
+    transform: scale(1.1);
+    }
