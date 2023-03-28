@@ -26,3 +26,6 @@ div{
     pointer-events: none;
 }
     
+body{
+    color: lightcoral;
+}
