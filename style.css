@@ -1,15 +1,20 @@
 
 h1{
     font-size: 62px;
-    margin-bottom: 20px;
+
     text-align: center;
-    padding-top: 20px;
     position:relative;
 } 
 div{
     background-color: bisque;
 
 }
+
+p {
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
 .p1{
     font-size: 56px;
     margin-bottom: 20px;
@@ -76,11 +81,6 @@ nav a {
 	color: #777777;
   }
   
-.imagen:hover img {
-    transform: scale(1.1);
-    filter: blur();
-    pointer-events: none;
-}
     
 body{
 
@@ -104,4 +104,17 @@ button {
 button:hover {
 	background-color: #a3adf2;
 	color: #ffffff;
+}
+img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: blur();
+    pointer-events: none;
 }
