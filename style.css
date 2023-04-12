@@ -1,14 +1,17 @@
 
 h1{
     font-size: 62px;
-
     text-align: center;
     position:relative;
 } 
 div{
-    background-color: bisque;
+    background-color: rgb(172, 189, 251);
 
 }
+.head1{
+	background-color: rgb(229, 229, 252);
+}
+
 
 p {
 	margin-top: 15px;
@@ -35,7 +38,7 @@ header {
 	margin-bottom: 15px;
   }
 nav {
-	background-color: #e1e1e1;
+	background-color:rgb(172, 189, 251);
 	height: 60px;
 	display: flex;
 	align-items: center;
@@ -52,7 +55,7 @@ nav ul {
 	padding: 0;
 	display: flex;
 	flex-grow: 1;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 nav ul ul {
 	position: absolute;
@@ -84,7 +87,7 @@ nav a {
     
 body{
 
-    background-color: rgb(128, 132, 240)!important;
+    background-color: rgb(229, 229, 252)!important;
 }
 
 .contacto{
@@ -93,27 +96,35 @@ body{
 }
 
 button {
-	background-color: #e1e1e1;
+	background-color: #79aaee;
 	color: #323232;
 	font-weight: bold;
 	font-size: 1.2em;
 	border: none;
 	border-radius: 50px;
 	padding: 10px 22px;
+	margin: 10px 2px;
 }
 button:hover {
 	background-color: #a3adf2;
 	color: #ffffff;
 }
-img {
-	margin-top: 15px;
-	margin-bottom: 15px;
+.galeria {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
+.galeria img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 10px;
+}
 
-img:hover {
+.galeria img:hover {
     transform: scale(1.1);
     filter: blur();
-    pointer-events: none;
 }
