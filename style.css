@@ -298,6 +298,7 @@ nav a {
 	border-radius: 10px; /* Agregar un radio de borde de 10px */
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agregar una sombra para mejorar la apariencia */
 	padding-top: 15px;
+	padding-bottom: 340px;
 	
   }
 
@@ -317,23 +318,22 @@ nav a {
 	opacity: 0; /* Establecer la opacidad en 0 para que el texto esté oculto */
 	transition: opacity 1s ease-in-out; /* Agregar una transición de 1 segundo para que el texto aparezca gradualmente */
 	padding-right: 10px;
-	padding-bottom: 210px ;
 }
 #banner:hover h1 {
 	opacity: 1; /* Establecer la opacidad en 1 al hacer hover para que el texto aparezca */
 }
 
 #banner p {
-	font-size: 0.8rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
-	font-size: 1em;
-	margin-bottom: 25px;
-	padding-right: 465px;
-	text-align: center;
+	font-size: 0.85em;
+	padding-right: 12px;
 	opacity: 0; /* Establecer la opacidad en 0 para que el texto esté oculto */
 	transition: opacity 1s ease-in-out; /* Agregar una transición de 1 segundo para que el texto aparezca gradualmente */
+	text-align: left;
+	margin-left: 15px;
+	
 }
 
 .pdiv {
@@ -358,7 +358,7 @@ nav a {
 	margin-left: 25px;
 	opacity: 0; /* Establecer la opacidad en 0 para que el texto esté oculto */
 	transition: opacity 1s ease-in-out; /* Agregar una transición de 1 segundo para que el texto aparezca gradualmente */
-	margin-top: 105px;
+	margin-top: 260px;
 	margin-bottom: 5px;
 }
 
@@ -379,6 +379,14 @@ button.comprar:hover {
 #productos {
 	background-color: #f3f3f3;
 	padding: 6px 0;
+}
+#productos p{
+	background-color: #f3f3f3;
+	padding: 6px 0;
+	
+	
+
+	
 }
 
 /* Estilo para la sección "Servicios" */
@@ -484,8 +492,16 @@ button.comprar:hover {
 	.servicio div {
 	  width: 100%;
 	}
+	.banner{
+		width: 100%;
+	}
   }
   
+@media screen and (max-width: 200px) {
+	#banner p{
+		display: none;
+	}
+}
 
 /* Estilos del footer */
 footer {
@@ -531,6 +547,8 @@ footer a:hover {
 	font-size: 1.1em;
 	color: #777777;
 	text-align: center;
+	display: flex;
+	align-items: center;
 }
 
   .menu-pestanas button {
@@ -541,6 +559,9 @@ footer a:hover {
 	border-radius: 6px 6px 6px 6px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	display: flex;
+	align-items: center;
+
   }
   .menu-pestanas button:focus {
 	outline: none;
