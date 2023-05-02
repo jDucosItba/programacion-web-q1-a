@@ -133,6 +133,7 @@ form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
 }
 
 #form{
@@ -392,7 +393,7 @@ button.comprar:hover {
 /* Estilo para la sección "Servicios" */
 #servicios {
 	background-color: #f6f6f6;
-	padding: 80px 0;
+	padding: 25px 0;
 	text-align: center;
   }
   
@@ -412,7 +413,7 @@ button.comprar:hover {
   }
   
   .servicio div {
-	margin: 20px;
+	margin: 10px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
@@ -453,39 +454,6 @@ button.comprar:hover {
   
   .servicio div:hover::before {
 	opacity: 1;
-  }
-  
-  .servicio .prev, .servicio .next {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 50px;
-	width: 50px;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: bold;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-	z-index: 1;
-  }
-  
-  .servicio .prev:hover, .servicio .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .servicio .prev {
-	left: 0;
-	margin-left: 20px;
-  }
-  
-  .servicio .next {
-	right: 0;
-	margin-right: 20px;
   }
   
   @media (max-width: 768px) {
@@ -586,10 +554,18 @@ footer a:hover {
   /* Estilo para la sección "Nosotros" */
 #nosotros {
 	background-color: #f2f2f2;
-	padding: 80px 0;
+	padding: 5px 0;
 	text-align: center;
   }
-  
+
+#nosotros div{
+	display: flex;
+	justify-content: center;
+}
+
+.nosotros img{
+	width: 50%;
+}
   /* Estilo para el título "Nosotros" */
   #nosotros h2 {
 	font-size: 36px;
@@ -635,5 +611,7 @@ footer a:hover {
 	font-weight: bold;
 	color: #333333;
 	margin-bottom: 30px;
+	text-align: center;
+	align-items: center;
 }
   
