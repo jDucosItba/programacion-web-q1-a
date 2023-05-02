@@ -75,6 +75,22 @@ button {
 	transition: background-color 0.3s;
 	margin-bottom: 30px;
 }
+.btn-group .buttonPag{
+	float: left;
+	background-color: #e1e1e1;
+	color: #323232;
+	font-weight: bold;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 30px;
+	padding: 10px 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
 
 button:hover {
 	background-color: #323232;
@@ -393,7 +409,7 @@ button.comprar:hover {
 /* Estilo para la sección "Servicios" */
 #servicios {
 	background-color: #f6f6f6;
-	padding: 25px 0;
+	padding: 20px 0;
 	text-align: center;
   }
   
