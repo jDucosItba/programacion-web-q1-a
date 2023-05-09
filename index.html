@@ -1,189 +1,211 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Chain Blocc</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Chain Blocc</title>
 </head>
+
+<header>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <div class="logoChain">
+        <a class="navbar-brand" href="index.html"><img src="./img/ChainBlocc.png" alt="Chainblocc Logo"></a>
+      </div>
+      <div class="navbar-left ms-auto d-flex align-items-center">
+       <a href="sesion.html"><img src="./img/Cuenta.png" id="btnCuenta" alt="Icono cuenta"></a>
+    </div>
+      <button class="navbar-toggler" type="button" id="btnCuenta" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="width: 35px;">
+        <span class="navbar-toggler-icon" style="width: 35px;"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Home</h5>
+          <button type="button" class="btn-close btn btn-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="suscripciones.html">Subscripciones</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Data Warehouse</a></li>
+                <li><a class="dropdown-item" href="#">Host Servers</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Hardware & Others</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Node Sharing</a></li>
+                <li><a class="dropdown-item" href="#">Cloud Storage</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Cloud Security</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <body>
-	<header>
-		<div class="logo">
-			<div class="logoChain">
-				<a href="index.html"><img src="./img/ChainBlocc.png" alt="Chainblocc Logo"></a>
-			  </div>
-		</div>
-		<nav>
-			<ul>
-			  <li><a href="#">Inicio</a></li>
-			  <li><a href="#">Productos</a></li>
-			  <li><a href="#" id="carrito">Carrito (0)</a></li>
-			  <li class="dropdown">
-				<a href="#">Soporte y contacto</a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">Correo</a></li>
-				  <li><a href="#">Teléfono</a></li>
-				  <li><a href="#">Chat en línea</a></li>
-				</ul>
-			  </li>
-			</ul>
-		  </nav>
-	  </header>
-	
-	<main>
-		<section id="banner">
-			<h1 style="margin-left: 12px;" id="demo">Create, Post & Sel P2P.</h1>
 
-			<p>Decentralized platform for</p>
-			<p class="pdiv">products and services.</p>
-			
-			<a href="index.html#prod" class="button" style="float: left;"><button>Explore more</button></a>
-		</section>
-		
-		<section id="productos">
-			<p id="prod"></p>
-			<h1>Available products</h1>
-			
-			<div class="btn-group">
-				<p>Página<button class="buttonPag">1</button>
-				<button class="buttonPag">2</button>
-				<button class="buttonPag">3</button></p>
-			</div>
-				<div class="pestana pestana-activa col-6" id="pestana">
-					<div class="galeria">
-						<div class="pProd">
-						  <img src="https://www.comeros.com.ar/wp-content/uploads/2022/03/UX582HS-a.png" alt="Producto 1">
-						  <h2>Producto 1</h2>
-						  <p>Asus i9-11900H</p>
-						  <button class="agregar botonGaleria">Agregar al carrito</button>
-						</div>
-						<div class="pProd">
-						  <img src="https://img.ebyrcdn.net/1075201-1417197-800.jpg" alt="Producto 2">
-						  <h2>Producto 2</h2>
-						  <p>Acer Nitro Full HD</p>
-						  <button class="agregar botonGaleria" >Agregar al carrito</button>
-						</div>
-						<div class="pProd">
-						  <img src="https://unigrade.com/wp-content/uploads/2023/01/antminer_s19j_pro_pic1.png" alt="Producto 3">
-						  <h2>Producto 3</h2>
-						  <p>Bitcoin Miner S19 Pro</p>
-						  <button class="agregar botonGaleria">Agregar al carrito</button>
-						</div>
-				</div>
-				<p>Página<button style="margin-left: 15px">2</button></p>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100">
+          </div>
+          <div class="centerText">
+            <h2>DeFi for All.</h2>
+          </div>
+          <div class="center">
+            <a href="index.html#available"><img src="./img/flecha_icono-removebg-preview.png" id="buttonCarousel" alt="Arrow"></a>
+          </div>
+        </div>
+      </div>
+<section id="servicio">
+  <div class="container">
+      <div class="row">
+        <div>
+          <p id="available"></p>
+          <h1>Available Services</h1>
+        </div>
+      </div>
+    </div>
+</section>
 
-				<div class="pestana pestana-activa col-6" id="pestana2">
-					<div class="galeria">
-						<div class="pProd">
-						  <img src="https://www.comeros.com.ar/wp-content/uploads/2022/03/UX582HS-a.png" alt="Producto 4">
-						  <h2>Product 4</h2>
-						  <p>Asus i9-11900H</p>
-						  <button class="agregar botonGaleria">Agregar al carrito</button>
-						</div>
-						<div class="pProd">
-						  <img src="https://img.ebyrcdn.net/1075201-1417197-800.jpg" alt="Producto 5">
-						  <h2>Product 5</h2>
-						  <p>Acer Nitro Full HD</p>
-						  <button class="agregar botonGaleria" >Agregar al carrito</button>
-						</div>
-						<div class="pProd">
-						  <img src="https://unigrade.com/wp-content/uploads/2023/01/antminer_s19j_pro_pic1.png" alt="Producto 6">
-						  <h2>Product 6</h2>
-						  <p>Bitcoin Miner S19 Pro</p>
-						  <button class="agregar botonGaleria">Agregar al carrito</button>
-						</div>
-				</div>
+<section id="producto">
+      <div class="card-container" style="width: 18rem; ">
+        <img src="https://www.boydcorp.com/images/industries/Cloud-Main-Image.jpg" class="card-img-top" alt="Product 1" >
+        <div class="card-body">
+          <h5 class="card-title">Big Data Center</h5>
+          <p class="card-text">How we work and store information.</p>
+          <a href="#" class="btn btn-primary">More information</a>
+        </div>
+      </div>
 
+      <div class="card-container" style="width: 18rem;">
+        <img src="https://social-hire.com/uploads/62359-Cloud-Based-CRM.jpg" class="card-img-top" alt="product 2">
+        <div class="card-body">
+          <h5 class="card-title">Cloud Computing <br>Software</h5>
+          <p class="card-text">How we connect store data through our software.</p>
+          <a href="#" class="btn btn-primary">More information</a>
+        </div>
+      </div>
 
-				
-				</section>
-				  
-				
+      <div class="card-container" style="width: 18rem;">
+        <img src="https://media.licdn.com/dms/image/C5612AQGthZs00xPX2g/article-cover_image-shrink_720_1280/0/1634809398232?e=2147483647&v=beta&t=d3whNF7CWbEuEzGUb_OxOHSR_erMptPgAoDcdyKuiVw" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Decentralized Cloud</h5>
+          <p class="card-text">Noding benefits in security,<br> data storage and long term sustainability.</p>
+          <a href="#" class="btn btn-primary">More information</a>
+        </div>
+      </div>
 
-			  <div class="galeria section">
-				<a href="index.html#serv" class="button" style="margin-top: 42px;"><button>Go to services</button></a>
-			  </div>
-			  
-			  <section id="servicios" class="col-6">
-				<p id="serv"></p>
-				<h1>Services</h1>
-				<div class="servicio navegacion">
-			 		
-				  	<div>
-						<img src="./img/web3.png" alt="Servicio 1">
-
-				  	</div>
-				  	<div>
-						<img src="./img/service.jpg" alt="Servicio 2">
-
-				  	</div>
-				  	<div>
-						<img src="./img/web3.png" alt="Servicio 3">
-
-				  	</div>
-				  	<div>
-						<img src="./img/service.jpg" alt="Servicio 2">
-
-				  	</div>
-				  	<div>
-						<img src="./img/web3.png" alt="Servicio 3">
-				  	</div>
-				</div>
-
-				<div>
-					<a href="index.html#nos" class="button"><button>More about us</button></a>
-				</div>
-
-			  </section>
-
-		<section id="nosotros">
-			<p id="nos"></p>
-			<div class="galeria nosotros" id="Nosotros div">
-				<img src="https://codequotient.com/blog/wp-content/uploads/2022/03/8-Principles-of-Developing-Strong-Tech-Teams.jpg" alt="Our team">
-			  </div>
-			<h2>About us</h2>
-			<p>We are a team of professionals committed to the development of decentralized technologies and the promotion of a fairer and more sustainable economy.</p>
-			<a href="./index.html"><button>Get to known us more</button></a>
-		</section>
-		
-		<a href="index.html" class="button"><button>Back to home page</button></a>
-
-		<section id="contacto" class="contacto section">
-			<h2>Contact</h2>
-			<div class="pProd"></div>
-			
-			<form>
-				<div >
-					<img src="https://media.istockphoto.com/id/1139675204/vector/customer-helpline-support-icon-concept-vector-illustration-technical-support-icon-concept.jpg?s=612x612&w=0&k=20&c=dCa9DhkVbggwHtQvvSPIp0gHy4AVchXj1elSqrKJM2w=" alt="Contact img" id="form">
-				</div>
-
-				<div id="formulario">
-					<ul style="list-style: none;">	
-						<li><label for="nombre">Name</label>
-						<li><input type="text" id="nombre" name="nombre" required></li>
-						<li><label for="email">Email</label></li>
-						<li><input type="email" id="email" name="email" required></li>
-						<li><label for="mensaje">Message</label></li>
-						<li><textarea id="mensaje" name="mensaje" required></textarea></li>
-					 <button>Send</button>
-				   </ul>
-				</div>
-
-				<div >
-					<img src="https://media.istockphoto.com/id/1139675204/vector/customer-helpline-support-icon-concept-vector-illustration-technical-support-icon-concept.jpg?s=612x612&w=0&k=20&c=dCa9DhkVbggwHtQvvSPIp0gHy4AVchXj1elSqrKJM2w=" alt="Contact img" id="form">
-				</div>
-
-			</form>
-		    
-			<div class="pProd"></div>
-		</section>
-	</main>
-	
-	<footer>
-		<p>All rights reserved &copy; 2023</p>
-	</footer>
+      <div class="card-container" style="width: 18rem;">
+        <img src="https://uploads-ssl.webflow.com/5e39239f2e417c1a357f71f5/607eaf032f4fb2423349faf9_smart-contracts-security-for-pentesters.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blockchain & Cloud</h5>
+          <p class="card-text">Security and transparency.</p>
+          <a href="#" class="btn btn-primary">More information</a>
+        </div>
+      </div>
+</section>
+<section id="servicio">
+  <div class="container">
+      <div class="row">
+        <div>
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+</section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+  <footer class="bg-dark text-white">
+    <div class="container p-4"></div>
+      <div class="row row1">
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <h5 class="fw-bold mb-3">Our company</h5>
+          <p class="small">We are a company specialized in blockchain cloud services. We offer secure and efficient solutions for your business needs.</p>
+        </div>
+        
+        <div class="col-lg-4 mb-3 mb-lg-0" style="margin-left: 497px;">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 (123) 456-7890</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i> customerservice@chainblocc.com</li>
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> San Martin 202, Buenos Aires, Argentina</li>
+          </ul>
+        </div>
+        <div class="container p-4">
+          <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About us</h5>
+        
+            <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">About</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Team</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Blog</a>
+            </li>
+            </ul>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Servicios</h5>
+        
+            <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Nodos compartidos</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Almacenamiento en la nube</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Seguridad en la nube</a>
+            </li>
+            </ul>
+          </div>
+        <div class="col-lg-4" style="margin-left: 245px;">
+          <h5 class="fw-bold mb-3">Follow us</h5>
+          <a class="btn btn-outline-light btn-floating btn-ms" href="#!" role="button">Facebook<i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating btn-ms" href="#!" role="button">Twitter<i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating btn-ms" href="#!" role="button">Linkedin<i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating btn-ms" href="#!" role="button">Instagram<i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-4 pt-4 border-top">
+        <p class="small">&copy; 2023 Chain Blocc. All rights reserved.</p>
+        <p class="small">Developed by <a href="www.github.com/JoaquinDucos" class="text-white">Joaquin Ducos</a></p>
+      </div>
+    
+  </footer>
+  
+
 </html>
-
-

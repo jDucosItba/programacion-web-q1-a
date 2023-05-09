@@ -1,0 +1,80 @@
+.logoChain {
+	top: 0;
+	left: 0;
+	z-index: 9999;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    position: sticky;
+    margin-bottom: 11px;
+  }
+  .logoChain img {
+	max-height: 65px;
+	margin-left: 4px;
+    border-radius: 10px;
+  }
+  header{
+    margin-bottom: 6em;
+    background-color: rgb(237, 235, 246);
+    color: rgb(237, 235, 246);
+    border-bottom: 1px;
+    margin-top: 33px;
+  }
+
+  body {
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    margin-bottom: 15px;
+  }
+
+#suscripciones {
+    float: left;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(237, 235, 246);
+    width: 100%;
+    margin-top: 10px;
+}  
+#suscripciones div{
+    font-family: sans-serif;
+    margin: 1.72em;
+    width: 100%;
+    padding: 10px;
+}
+ #suscripciones img {
+    border-radius: 10px;
+    height: 130px;
+    object-fit: cover;
+ }
+
+ .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+  }
+  
+  .footer .social-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .footer .copyright {
+    font-size: 14px;
+  }
+  

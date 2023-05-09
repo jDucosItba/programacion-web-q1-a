@@ -1,0 +1,239 @@
+.logoChain {
+	top: 0;
+	left: 0;
+	z-index: 9999;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    position: sticky;
+  }
+  .logoChain img {
+	max-height: 65px;
+	margin-left: 4px;
+    border-radius: 10px;
+  }
+  header{
+    margin-bottom: 6em;
+    background-color: rgb(237, 235, 246);
+    color: rgb(237, 235, 246);
+    border-bottom: 1px;
+  }
+
+#producto {
+    float: left;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(237, 235, 246);
+    width: 100%;
+}  
+#producto div{
+    font-family: sans-serif;
+    margin: 1.72em;
+    width: 100%;
+    padding: 10px;
+}
+ #producto img {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+ }
+.carousel img{
+    background-image: url('./img/ChainBloccBanner.jpg');
+    background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	padding: 10px 0;
+	transition: all 0.45s ease-in-out;
+	border-radius: 15px; 
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    padding: 240px;
+    margin-top: 1em;
+    background-color: rgb(237, 235, 246);
+}
+
+.carousel:hover img {
+    transform: translateY(-6px); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+  }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 65vh;
+    margin-top: 41vh;
+    background-color: rgb(237, 235, 246);
+  }
+
+  .carousel:hover .centerText {
+    transform: translateY(-6px); 
+    transition: all 0.75s ease-in-out;
+  }
+ .centerText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 55vh;
+    margin-top: 50px;
+    position: relative;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  }
+  #buttonCarousel {
+    font-size: 1.9em;
+    padding: 7px 13px 7px 12px;
+    opacity: 1; 
+    position: relative;
+    z-index: 99;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(237, 235, 246);
+    width: 70px;
+    background-image: none;
+  }
+  #btnCuenta {
+    font-size: 1.9em;
+    padding: 5px 5px 5px 5px;
+    margin-right: 8px;
+    opacity: 1; 
+    position: relative;
+    z-index: 99;
+    border-radius: 12px;
+    border: none;
+    background-color:none;
+    width: 35px;
+    background-image: none;
+  }
+
+  #btnCuenta:hover{
+    opacity: 1;
+    transition: opacity 2s ease-in-out; 
+    transform: translateY(-4px); 
+  }
+
+#buttonCarousel:hover{
+    opacity: 1;
+    transition: opacity 2s ease-in-out; 
+    transform: translateY(-4px); 
+	box-shadow: 0px 0px 15px rgba(59, 59, 59, 0.3); 
+	border-radius: 20px;
+}
+
+.card-container{
+    transition: all 0.4s ease-in-out;
+	border-radius: 15px; 
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.card-container:hover{
+    transform: translateY(-6px);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); 
+	border-radius: 20px;
+    transition: opacity 1s ease-in-out; 
+}
+.bordered {
+    border: 2px solid #ccc;
+    padding: 20px;
+  }
+  
+#servicio {
+    background-color:rgb(237, 235, 246);
+    width: 100%;
+}
+#servicio div{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    object-fit: cover;
+}  
+#servicio div h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+	font-size: 3.3em;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #susc-btn,
+  #cuenta-btn {
+    background-color: #2E2E2E;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #susc-btn:hover,
+  #cuenta-btn:hover {
+    background-color: #3F3F3F;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding-top: 15px;
+    margin-top: 10px;
+    padding-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+  }
+  
+  .footer .social-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .footer .copyright {
+    font-size: 14px;
+  }
+
+  
+  footer h5 {
+    font-size: 16px;
+    color: #c7cacb;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .row1{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+  footer a {
+    font-size: 14px;
+    color: #929395;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #343a40;
+  }
+  footer .container {
+    max-width: 100%;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
