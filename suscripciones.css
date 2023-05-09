@@ -78,3 +78,21 @@
     font-size: 14px;
   }
   
+  #btnCuenta {
+    font-size: 1.9em;
+    padding: 5px 5px 5px 5px;
+    margin-right: 8px;
+    opacity: 1; 
+    position: relative;
+    z-index: 99;
+    border-radius: 12px;
+    border: none;
+    background-color:none;
+    width: 35px;
+    background-image: none;
+  }
+  #btnCuenta:hover{
+    opacity: 1;
+    transition: opacity 2s ease-in-out; 
+    transform: translateY(-4px); 
+  }

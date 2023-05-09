@@ -40,7 +40,7 @@
     object-fit: cover;
  }
 .carousel img{
-    background-image: url('./img/ChainBloccBanner.jpg');
+    background-image: url('./img/cadena.jpg');
     background-size: cover;
 	background-position: center;
 	color: #ffffff;
@@ -63,26 +63,29 @@
     justify-content: center;
     align-items: center;
     max-height: 65vh;
-    margin-top: 41vh;
+    margin-top: 54vh;
     background-color: rgb(237, 235, 246);
   }
-
-  .carousel:hover .centerText {
-    transform: translateY(-6px); 
-    transition: all 0.75s ease-in-out;
-  }
- .centerText{
+  .centerText{
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 55vh;
     margin-top: 50px;
     position: relative;
-    opacity: 1;
     font-weight: bold;
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    display: none;
   }
+  .carousel:hover .centerText {
+    transform: translateY(-6px); 
+    transition: all 0.75s ease-in-out;
+    opacity: 1;
+    display: flex;
+
+ }
+ 
   #buttonCarousel {
     font-size: 1.9em;
     padding: 7px 13px 7px 12px;
@@ -91,7 +94,7 @@
     z-index: 99;
     border-radius: 20px;
     border: none;
-    background-color: rgb(237, 235, 246);
+    
     width: 70px;
     background-image: none;
   }
