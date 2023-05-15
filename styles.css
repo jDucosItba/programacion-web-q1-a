@@ -39,8 +39,18 @@
     height: 200px;
     object-fit: cover;
  }
+
+ .container-espacioDiv{
+  background-color:  rgb(237, 235, 246);
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+ }
 .carousel img{
-    background-image: url('./img/cadena.jpg');
+    background-image: url('./img/CadenaInf_auto_x2_colored_toned_light_ai.jpg');
     background-size: cover;
 	background-position: center;
 	color: #ffffff;
@@ -66,6 +76,13 @@
     margin-top: 54vh;
     background-color: rgb(237, 235, 246);
   }
+  .center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 235, 246);
+    padding-bottom: 35px;
+  }
   .centerText{
     display: flex;
     justify-content: center;
@@ -83,7 +100,6 @@
     transition: all 0.75s ease-in-out;
     opacity: 1;
     display: flex;
-
  }
  
   #buttonCarousel {
@@ -97,6 +113,7 @@
     width: 70px;
     background-image: none;
   }
+
   #btnCuenta {
     font-size: 1.9em;
     padding: 5px 5px 5px 5px;
@@ -140,22 +157,135 @@
     border: 2px solid #ccc;
     padding: 20px;
   }
+
+  #pre-servicio {
+    background-image: url("https://images.pexels.com/photos/5632379/pexels-photo-5632379.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+  }
   
-#servicio {
-    background-color:rgb(237, 235, 246);
-    width: 100%;
-}
-#servicio div{
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    object-fit: cover;
-}  
-#servicio div h1 {
+  #pre-servicio p{
+    color: #242424;
+  }
+  
+  .service-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-item i {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 1.2em;
+    color: #555555;
+  }
+  
+  
+  
+  #servicio {
+    background-image: url("https://images.pexels.com/photos/590015/pexels-photo-590015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    /* Add other background styles as needed */
+  }
+  
+  .section-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: #3F3F3F;
+  }
+  
+  .service-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .service-list li:before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #007bff;
+    font-size: 1.2em;
+  }
+
+  .testimonial img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  #contacto {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+
+  #contacto h1 {
     font-family: sans-serif;
     font-weight: bold;
-	font-size: 3.3em;
-}
+    font-size: 3.3em;
+    text-align: center;
+  }
+
+  #contacto .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  #contacto .col-md-6 {
+    text-align: left;
+  }
+
+  #contacto .form-group {
+    margin-bottom: 20px;
+  }
+
+  #contacto button {
+    width: 100%;
+  }
 
 .navbar-left {
     display: flex;
@@ -238,4 +368,4 @@
     margin: 0;
     padding: 0;
   }
-  
+
