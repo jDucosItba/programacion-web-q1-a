@@ -6,8 +6,7 @@
     justify-content: right;
     flex-direction: row;
     position: sticky;
-    margin-bottom: 11px;
-    border-radius: 15px;
+    padding-bottom: 25px;
   }
   .logoChain img {
 	max-height: 65px;
@@ -23,7 +22,8 @@
   }
 
   body {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(194, 194, 194);
+    position: relative;
   }
 
   .container {
@@ -36,7 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(194, 194, 194);
     width: 100%;
 }  
 #suscripciones div{
@@ -52,39 +52,64 @@
  }
 
 /* Estilos del footer */
-footer {
-	background-color: #323232;
-	color: #ffffff;
-	padding: 50px 0;
-  padding-top: 10px;
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 15px;
+  margin-top: 10px;
+  padding-left: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
-footer p {
-	text-align: center;
-  margin-top: 10px;
-  padding-top: 10px;
-  font-size: 2.8em;
+.footer .social-icons {
+  display: flex;
+}
 
+.footer .social-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer .copyright {
+  font-size: 14px;
+}
+
+
+footer h5 {
+  font-size: 16px;
+  color: #c7cacb;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.row1{
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+footer a {
+  font-size: 14px;
+  color: #929395;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #343a40;
+}
+footer .container {
+  max-width: 100%;
 }
 
 footer ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-footer li {
-	margin: 0 20px;
-}
-
-footer a {
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 1.2em;
-	text-decoration: none;
-	transition: color 0.3s;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
   #btnCuenta {
@@ -110,7 +135,7 @@ footer a {
     padding-top:50px ;
   }
   .carousel img{
-    background-image: url('./img/subscripcion.avif');
+    background-image: url('./img/Suscripciongod.jpg');
     background-size: cover;
 	background-position: center;
 	color: #ffffff;
@@ -119,4 +144,33 @@ footer a {
     padding: 240px;
     margin-top: 1em;
     background-color: rgb(210, 210, 210);
+}
+
+.container-espacioDiv{
+  background-color:  rgb(194, 194, 194);
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+ }
+ .center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(194, 194, 194);
+  padding-bottom: 35px;
+}
+
+#buttonCarousel {
+  font-size: 1.9em;
+  padding: 7px 13px 7px 12px;
+  opacity: 1; 
+  position: relative;
+  z-index: 99;
+  border-radius: 20px;
+  border: none;
+  width: 70px;
+  background-image: none;
 }
