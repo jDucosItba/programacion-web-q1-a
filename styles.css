@@ -6,7 +6,7 @@
     justify-content: right;
     flex-direction: row;
     position: sticky;
-    display: flex;
+
   }
   .logoChain img {
 	max-height: 65px;
@@ -53,15 +53,18 @@
 .carousel img{
     background-image: url('./img/cadenainf\ \(2\).jpg');
     background-size: cover;
-	background-position: center;
-	color: #ffffff;
-	padding: 10px 0;
-	transition: all 0.45s ease-in-out;
-	border-radius: 15px; 
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-    padding: 240px;
+    background-position: center;
+    color: #ffffff;
+    transition: all 0.45s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-top: 1em;
+    padding: 240px;
     background-color: rgb(237, 235, 246);
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor /
+    height: auto; / Permite que la altura se ajuste automáticamente en proporción al ancho /
+    max-width: 100%; / Establece un ancho máximo para asegurarse de que la imagen no se desborde del contenedor /
+    padding-bottom: 100%; / Crea un espacio de relleno proporcional para mantener la relación de aspecto de la imagen */
 }
 
 .carousel:hover img {
