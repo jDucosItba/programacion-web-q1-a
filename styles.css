@@ -6,6 +6,7 @@
     justify-content: right;
     flex-direction: row;
     position: sticky;
+    display: flex;
   }
   .logoChain img {
 	max-height: 65px;
