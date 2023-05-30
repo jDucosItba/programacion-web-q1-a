@@ -174,3 +174,46 @@ footer ul {
   width: 70px;
   background-image: none;
 }
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#cart-items.empty::before {
+  content: "No hay suscripciones agregadas al carrito";
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#cart-items li {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#cart-items li .subscription-info {
+  text-align: center;
+}
+
+#cart-items li .subscription-title {
+  font-weight: bold;
+}
+
+#cart-items li .subscription-price {
+  font-style: italic;
+}
+
+#cart-items li .remove-btn {
+  color: red;
+  cursor: pointer;
+}
+

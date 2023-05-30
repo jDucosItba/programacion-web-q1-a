@@ -376,3 +376,38 @@
     padding: 0;
   }
 
+  .testimonial {
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent #f1f1f1;
+    transform: translateY(-50%);
+  }
+  
+  .testimonial-content {
+    margin-right: 40px;
+  }
+  
+  .testimonial-content p {
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-content cite {
+    font-weight: bold;
+  }
+  
