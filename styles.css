@@ -2,17 +2,18 @@
 	top: 0;
 	left: 0;
 	z-index: 9999;
-    display: flex;
-    justify-content: right;
-    flex-direction: row;
-    position: sticky;
-
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  position: sticky;
   }
+
   .logoChain img {
 	max-height: 65px;
 	margin-left: 4px;
-    border-radius: 10px;
+  border-radius: 10px;
   }
+
   header{
     margin-bottom: 6em;
     background-color: rgb(237, 235, 246);
@@ -21,24 +22,24 @@
   }
 
 #producto {
-    float: left;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(237, 235, 246);
-    width: 100%;
+  float: left;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(237, 235, 246);
+  width: 100%;
 }  
 #producto div{
-    font-family: sans-serif;
-    margin: 1.72em;
-    width: 100%;
-    padding: 10px;
+  font-family: sans-serif;
+  margin: 1.72em;
+  width: 100%;
+  padding: 10px;
 }
  #producto img {
-    border-radius: 10px;
-    height: 200px;
-    object-fit: cover;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
  }
 
  .container-espacioDiv{
@@ -61,7 +62,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin-top: 1em;
   background-color: rgb(237, 235, 246);
-  width: 100%;
+  width: auto;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
@@ -107,42 +108,41 @@
     display: flex;
  }
  
-  #buttonCarousel {
-    font-size: 1.9em;
-    padding: 7px 13px 7px 12px;
-    opacity: 1; 
-    position: relative;
-    z-index: 99;
-    border-radius: 20px;
-    border: none;
-    width: 70px;
-    background-image: none;
-  }
+#buttonCarousel {
+  font-size: 1.9em;
+  padding: 7px 13px 7px 12px;
+  opacity: 1; 
+  position: relative;
+  z-index: 99;
+  border-radius: 20px;
+  border: none;
+  width: 70px;
+  background-image: none;
+}
+#btnCuenta {
+  font-size: 1.9em;
+  padding: 5px 5px 5px 5px;
+  margin-right: 8px;
+  opacity: 1; 
+  position: relative;
+  z-index: 99;
+  border-radius: 12px;
+  border: none;
+  background-color:none;
+  width: 35px;
+  background-image: none;
+}
 
-  #btnCuenta {
-    font-size: 1.9em;
-    padding: 5px 5px 5px 5px;
-    margin-right: 8px;
-    opacity: 1; 
-    position: relative;
-    z-index: 99;
-    border-radius: 12px;
-    border: none;
-    background-color:none;
-    width: 35px;
-    background-image: none;
-  }
-
-  #btnCuenta:hover{
-    opacity: 1;
-    transition: opacity 2s ease-in-out; 
-    transform: translateY(-4px); 
-  }
+#btnCuenta:hover{
+  opacity: 1;
+  transition: opacity 2s ease-in-out; 
+  transform: translateY(-4px); 
+}
 
 #buttonCarousel:hover{
-    opacity: 1;
-    transition: opacity 2s ease-in-out; 
-    transform: translateY(-4px); 
+  opacity: 1;
+  transition: opacity 2s ease-in-out; 
+  transform: translateY(-4px); 
 	box-shadow: 0px 0px 15px rgba(59, 59, 59, 0.3); 
 	border-radius: 20px;
 }
