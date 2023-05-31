@@ -56,9 +56,7 @@
     width: 100%;
     padding: 10px;
 }
-
-/* Estilos del footer */
-.footer {
+footer {
   background-color: #333;
   color: #fff;
   padding-top: 15px;
@@ -66,25 +64,9 @@
   padding-left: 8px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  width: 100%;
 }
-
-.footer .social-icons {
-  display: flex;
-}
-
-.footer .social-icon {
-  margin-right: 10px;
-  font-size: 20px;
-  color: #fff;
-}
-
-.footer .copyright {
-  font-size: 14px;
-}
-
 
 footer h5 {
   font-size: 16px;
@@ -93,15 +75,19 @@ footer h5 {
   margin-bottom: 5px;
 }
 
-.row1{
+.row1 {
   margin-left: 10px;
   margin-top: 10px;
   padding-top: 0px;
   padding-bottom: 5px;
+  justify-content: center;
 }
+
 .row {
   margin-top: 5px;
+  justify-content: center;
 }
+
 footer a {
   font-size: 14px;
   color: #929395;
@@ -111,8 +97,9 @@ footer a {
 footer a:hover {
   color: #343a40;
 }
+
 footer .container {
-  max-width: 100%;
+  flex-grow: 1;
 }
 
 footer ul {
