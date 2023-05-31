@@ -42,6 +42,12 @@
   object-fit: cover;
  }
 
+ .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
  .container-espacioDiv{
   background-color:  rgb(237, 235, 246);
   max-width: 100%;
@@ -134,6 +140,25 @@
 }
 
 #btnCuenta:hover{
+  opacity: 1;
+  transition: opacity 2s ease-in-out; 
+  transform: translateY(-4px); 
+}
+
+#btnMenu {
+  padding: 5px 5px 5px 5px;
+  margin-right: 8px;
+  margin-left: 9px;
+  opacity: 1; 
+  position: relative;
+  z-index: 99;
+  border: none;
+  background-color:none;
+  width: 25px;
+  background-image: none;
+}
+
+#btnMenu:hover{
   opacity: 1;
   transition: opacity 2s ease-in-out; 
   transform: translateY(-4px); 
