@@ -142,7 +142,8 @@ footer ul {
 
 .container-espacioDiv h1{
 font-size: 3.4em;
-font-weight: bold;
+font-weight: normal;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #buttonCarousel {
