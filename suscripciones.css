@@ -14,6 +14,7 @@
   margin-left: 4px;
   border-radius: 10px;
 }
+
   header{
     margin-bottom: 6em;
     background-color: rgb(237, 235, 246);
@@ -27,29 +28,34 @@
   }
 
   .container {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
 #suscripciones {
-    float: left;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(194, 194, 194);
-    width: 100%;
-}  
+  float: left;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(194, 194, 194);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#suscripciones img {
+  border-radius: 20px;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 520px;
+}
+  
 #suscripciones div{
     font-family: sans-serif;
-    margin: 1.72em;
+    margin: 0.3em;
     width: 100%;
     padding: 10px;
 }
- #suscripciones img {
-    border-radius: 10px;
-    height: 130px;
-    object-fit: cover;
- }
 
 /* Estilos del footer */
 .footer {
@@ -93,6 +99,9 @@ footer h5 {
   padding-top: 0px;
   padding-bottom: 5px;
 }
+.row {
+  margin-top: 5px;
+}
 footer a {
   font-size: 14px;
   color: #929395;
@@ -112,61 +121,41 @@ footer ul {
   padding: 0;
 }
 
-  #btnCuenta {
-    font-size: 1.9em;
-    padding: 5px 5px 5px 5px;
-    margin-right: 8px;
-    opacity: 1; 
-    position: relative;
-    z-index: 99;
-    border-radius: 12px;
-    border: none;
-    background-color:none;
-    width: 35px;
-    background-image: none;
-  }
-  #btnCuenta:hover{
-    opacity: 1;
-    transition: opacity 2s ease-in-out; 
-    transform: translateY(-4px); 
-  }
-
-  .carousel div {
-    padding-top:50px ;
-  }
-  .carousel img{
-    background-image: url('./img/suscripciongod.jpg');
-    background-size: cover;
-	background-position: center;
-	color: #ffffff;
-	padding: 10px 0;
-	transition: all 0.45s ease-in-out;
-    padding: 240px;
-    margin-top: 1em;
-    background-color: rgb(210, 210, 210);
+#btnCuenta {
+  font-size: 1.9em;
+  padding: 5px 5px 5px 5px;
+  margin-right: 8px;
+  opacity: 1; 
+  position: relative;
+  z-index: 99;
+  border-radius: 12px;
+  border: none;
+  background-color:none;
+  width: 35px;
+  background-image: none;
+}
+#btnCuenta:hover{
+  opacity: 1;
+  transition: opacity 2s ease-in-out; 
+  transform: translateY(-4px); 
 }
 
+.carousel div {
+  padding-top:50px ;
+}
 .container-espacioDiv{
   background-color:  rgb(194, 194, 194);
   max-width: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  margin-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 5px;
  }
 
 .container-espacioDiv h1{
-font-size: 35px;
+font-size: 3.4em;
 font-weight: bold;
-}
- .center2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(194, 194, 194);
-  padding-bottom: 35px;
 }
 
 #buttonCarousel {
@@ -186,8 +175,10 @@ font-weight: bold;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
   width: 100%;
+  font-weight: bold;
 }
 
 #cart-items li {
@@ -197,10 +188,12 @@ font-weight: bold;
   background-color: #f2f2f2;
   padding: 10px;
   border-radius: 5px;
+  font-weight: normal;
 }
 
 #cart-items li .subscription-info {
   text-align: center;
+  
 }
 
 #cart-items li .subscription-title {
@@ -259,3 +252,11 @@ font-weight: bold;
   transition: opacity 2s ease-in-out; 
   transform: translateY(-4px); 
 }
+.card-body{
+  justify-content: center;
+  text-align: center;
+}
+.card{
+  border-radius: 20px;
+}
+
