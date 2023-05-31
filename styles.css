@@ -197,7 +197,7 @@ header{
   }
 
   #pre-servicio {
-    background-image: url("https://images.pexels.com/photos/5632379/pexels-photo-5632379.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-image: url("./img/computer-cart.jpeg");
     background-size: cover;
     background-position: center;
   }
@@ -239,7 +239,7 @@ header{
   
   
   #servicio {
-    background-image: url("https://images.pexels.com/photos/590015/pexels-photo-590015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("./img/analytics-chainblocc.jpeg");
     background-size: cover;
     background-position: center;
     /* Add other background styles as needed */
