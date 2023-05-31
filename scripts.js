@@ -6,10 +6,20 @@ planButtons.forEach(button => {
   button.addEventListener('click', addToCart);
 });
 
+// Variable para almacenar el plan actual en el carrito
+let currentPlan = null;
+
+// Obtén el carrito
+const cart = document.getElementById('cart-items');
+
+// Crear el elemento para mostrar el texto dinámico
+const cartText = document.createElement('span');
+cartText.classList.add('cart-text');
+
 // Función para agregar un plan al carrito
 function addToCart(event) {
   event.preventDefault();
-  
+
   // Obtener el título y el precio del plan seleccionado
   const planTitle = this.parentNode.querySelector('.card-title').textContent;
   const planPrice = this.textContent;
@@ -18,7 +28,24 @@ function addToCart(event) {
   const listItem = document.createElement('li');
   listItem.textContent = `${planTitle} - ${planPrice}`;
 
-  // Agregar el elemento de lista al carrito
-  const cart = document.getElementById('cart-items');
+  // Eliminar el plan actual del carrito, si existe
+  if (currentPlan) {
+    cart.removeChild(currentPlan);
+  }
+
+  // Agregar el nuevo elemento de lista al carrito
   cart.appendChild(listItem);
+
+  // Actualizar el plan actual
+  currentPlan = listItem;
+
+  // Actualizar el texto del carrito
+  if (cart.children.length > 0) {
+    cartText.textContent = "Susbscription added to cart: ";
+  }
+
+  // Verificar si el elemento de texto ya está agregado al carrito
+  if (!cart.contains(cartText)) {
+    cart.insertAdjacentElement('afterbegin', cartText);
+  }
 }
