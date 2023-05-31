@@ -1,18 +1,19 @@
 .logoChain {
-	top: 0;
-	left: 0;
-	z-index: 9999;
-    display: flex;
-    justify-content: right;
-    flex-direction: row;
-    position: sticky;
-    padding-bottom: 25px;
-  }
-  .logoChain img {
-	max-height: 65px;
-	margin-left: 4px;
-    border-radius: 10px;
-  }
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  position: sticky;
+}
+
+.logoChain img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  margin-left: 4px;
+  border-radius: 10px;
+}
   header{
     margin-bottom: 6em;
     background-color: rgb(237, 235, 246);
