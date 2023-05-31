@@ -67,7 +67,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin-top: 1em;
   background-color: rgb(237, 235, 246);
-  width: auto;
+  width: 100%;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
@@ -83,8 +83,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 63vh;
-    margin-top: 63vh;
+    max-height: 59vh;
+    margin-top: 58vh;
     background-color: rgb(237, 235, 246);
   }
   .center2 {
