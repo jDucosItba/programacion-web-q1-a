@@ -172,14 +172,11 @@ section#checkout .btn-primary {
   align-items: center;
  
 } 
-.iconspace{
-    margin-top: 10px;
-   
+.delete-icon:hover{
+    opacity: 1;
+    transition: opacity 2s ease-in-out; 
+    transform: translateY(-4px); 
 }
-.iconspace i{
-    color: red;
-    margin-top: 10px;
-} 
   #selected-plan-container {
     position: relative;
     z-index: 1;
