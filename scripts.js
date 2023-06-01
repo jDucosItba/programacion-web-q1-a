@@ -48,4 +48,25 @@ function addToCart(event) {
   if (!cart.contains(cartText)) {
     cart.insertAdjacentElement('afterbegin', cartText);
   }
+
+  // Almacenar el plan seleccionado y su precio en el almacenamiento local (localStorage)
+  localStorage.setItem('selectedPlan', planTitle);
+  localStorage.setItem('selectedPrice', planPrice);
+
+  // Mostrar el cuadro de diálogo de confirmación
+  const confirmMessage = `¿Deseas realizar la compra del plan "${planTitle} - ${planPrice}"?`;
+  const shouldRedirect = confirm(confirmMessage);
+
+  if (shouldRedirect) {
+    // Redireccionar a transaccion.html
+    window.location.href = 'transaccion.html';
+  } else {
+    // Permanecer en la página actual (suscripciones.html)
+    // Aquí puedes agregar el código adicional que deseas ejecutar
+    console.log('Se eligió no realizar la compra. Permaneciendo en suscripciones.html.');
+  }
 }
+// Guardar la información del plan seleccionado en el almacenamiento local
+localStorage.setItem('selectedPlan', planTitle);
+localStorage.setItem('selectedPrice', planPrice);
+
