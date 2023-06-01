@@ -345,18 +345,83 @@ header{
   }
   
   .footer {
-    background-color: #333;
+    background-color:none;
     color: #fff;
     padding-top: 15px;
     margin-top: 10px;
     padding-left: 8px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   
+  :root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --whatsapp: #25d366;
+    --twitter: #0ec6ef; 
+}
+
+.footer-conteiner{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.footer-conteiner ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width:50px;
+    height:50px;
+    text-align: center;
+}
+
+.footer-conteiner ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color:#FAFAFA;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 25px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    transition: .2s;
+
+}
+
+.footer-conteiner ul:hover a{
+    filter:blur(2px);
+}
+
+.footer-conteiner ul li a:hover{
+    transform: translateY(-3px)scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.4);
+    filter: none;
+}
+
+.footer-conteiner ul li .facebook:hover{
+    background: var(--facebook);
+}
+.footer-conteiner ul li .instagram:hover{
+    background: var(--instagram);
+}
+.footer-conteiner ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+.footer-conteiner ul li .twitter:hover{
+  background: var(--twitter);
+}
+
+
+
   .footer .social-icons {
     display: flex;
   }
