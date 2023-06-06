@@ -25,19 +25,21 @@ document.addEventListener("DOMContentLoaded", function() {
     var selectedPrice = localStorage.getItem("selectedPrice");
   
     var selectedPlanInfo = document.getElementById("selected-plan-info");
-    let deletePlanIcon = document.getElementById("delete-plan-icon");
+    
     console.log(deletePlanIcon)
   
     if (selectedPlan && selectedPrice) {
       selectedPlanInfo.innerHTML = `
         <h3>${selectedPlan}</h3>
         <p>Precio: ${selectedPrice}</p>
+        <a id="delete-plan-icon" class="delete-icon" href="#"></a>
       `;
-  
+      var deletePlanIcon = document.getElementById("delete-plan-icon");
       deletePlanIcon.addEventListener("click", function() {
         var confirmDelete = confirm(
           "Are you sure you want to remove the subscription plan from your shopping cart?"
         );
+        location.reload();
         if (confirmDelete) {
           localStorage.removeItem("selectedPlan");
           localStorage.removeItem("selectedPrice");
