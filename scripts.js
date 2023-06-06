@@ -67,6 +67,3 @@ function addToCart(event) {
   }
 }
 // Guardar la información del plan seleccionado en el almacenamiento local
-localStorage.setItem('selectedPlan', planTitle);
-localStorage.setItem('selectedPrice', planPrice);
-

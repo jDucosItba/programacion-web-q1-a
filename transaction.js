@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var selectedPrice = localStorage.getItem("selectedPrice");
   
     var selectedPlanInfo = document.getElementById("selected-plan-info");
-    var deletePlanIcon = document.getElementById("delete-plan-icon");
+    let deletePlanIcon = document.getElementById("delete-plan-icon");
+    console.log(deletePlanIcon)
   
     if (selectedPlan && selectedPrice) {
       selectedPlanInfo.innerHTML = `
