@@ -307,3 +307,20 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 20px;
 }
 
+.delete-icon {
+  position: absolute;
+  background-image: url(./img/delete-icon.png);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-size: cover;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+ 
+} 
+.delete-icon:hover{
+    opacity: 1;
+    transition: opacity 2s ease-in-out; 
+    transform: translateY(-4px); 
+}  

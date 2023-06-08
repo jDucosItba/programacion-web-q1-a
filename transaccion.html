@@ -70,51 +70,54 @@
     </div>
   </section>
 
-  <section id="checkout" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Checkout</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form id="payment-form" class="needs-validation" novalidate>
-            <div class="form-group">
-                <label for="card-number">Card Number</label>
-                <input type="text" class="form-control" id="card-number" required>
-                <div class="valid-feedback">
-                  Correct!
-                </div>
+<section id="checkout" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Checkout</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="payment-form" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" class="form-control" id="card-number" required>
+            <div class="valid-feedback">
+              Correct!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your card number.
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="card-expiry">Expiration Date</label>
+                <input type="text" class="form-control" id="card-expiry" required>
                 <div class="invalid-feedback">
-                  Please enter your card number.
-                </div>
-              </div>
-              
-            <div class="form-row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="card-expiry">Expiration Date</label>
-                  <input type="text" class="form-control" id="card-expiry" required>
-                  <div class="invalid-feedback">
-                    Please enter expiration date.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="card-cvc">CVC</label>
-                  <input type="text" class="form-control" id="card-cvc" required>
-                  <div class="invalid-feedback">
-                    Please enter CVC.
-                  </div>
+                  Please enter expiration date (MM/YY).
                 </div>
               </div>
             </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Buy</button>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="card-cvc">CVC</label>
+                <input type="text" class="form-control" id="card-cvc" required>
+                <div class="invalid-feedback">
+                  Please enter CVC (3 digits).
+                </div>
+              </div>
             </div>
-          </form>
-        </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Buy</button>
+          </div>
+          <div id="error-message" class="text-danger mt-3" style="display: none;"></div>
+          <div id="success-message" class="text-success mt-3" style="display: none;"></div>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 </div>
 
 </body>
