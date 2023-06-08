@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
     simulateProcessing()
       .then(() => {
         // Simulación de éxito o error aleatorio
-        const successProbability = 0.8; // Probabilidad de éxito de la transacción (80% en este caso)
+        const successProbability = 0.92; // Probabilidad de éxito de la transacción (80% en este caso)
         const random = Math.random();
   
         if (random < successProbability) {
