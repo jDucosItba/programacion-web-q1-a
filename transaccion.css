@@ -47,6 +47,12 @@ footer {
     align-items: center;
     width: 100%;
   }
+  .row1{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
   
   :root {
     --facebook: #3b5999;
@@ -55,6 +61,12 @@ footer {
     --twitter: #0ec6ef; 
   }
   
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .footer-conteiner {
     display: flex;
     align-items: center;
@@ -67,6 +79,11 @@ footer {
     width: 50px;
     height: 50px;
     text-align: center;
+  }
+
+  .footer p{
+    display: flex;
+    justify-content: space-between;
   }
   
   .footer-conteiner ul li a {
