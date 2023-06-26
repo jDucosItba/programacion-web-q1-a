@@ -66,4 +66,3 @@ function addToCart(event) {
     console.log('Se eligió no realizar la compra. Permaneciendo en suscripciones.html.');
   }
 }
-// Guardar la información del plan seleccionado en el almacenamiento local
