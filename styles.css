@@ -196,6 +196,7 @@ header{
 .text{
   margin-left: 10px;
   margin-right: 10px;
+text-align: center;
 }
 .bordered {
     border: 2px solid #ccc;
