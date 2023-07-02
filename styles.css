@@ -192,6 +192,11 @@ header{
 	border-radius: 20px;
   transition: opacity 1s ease-in-out; 
 }
+
+.text{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .bordered {
     border: 2px solid #ccc;
     padding: 20px;
