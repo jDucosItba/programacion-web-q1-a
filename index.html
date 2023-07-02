@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Chain Blocc</title>
 </head>
+
 <header>
 <nav class="navbar bg-body-tertiary fixed-top">
 
@@ -107,7 +108,7 @@
       <div class="card-body">
         <h5 class="card-title">Big Data Center</h5>
         <p class="card-text text">How we work and store information.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup1')" >More information</a>
       </div>
     </div>
 
@@ -116,7 +117,7 @@
       <div class="card-body">
         <h5 class="card-title">Cloud Computing <br>Software</h5>
         <p class="card-text text">How we connect store data through our software.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup2')">More information</a>
       </div>
     </div>
 
@@ -125,7 +126,7 @@
       <div class="card-body">
         <h5 class="card-title">Decentralized Cloud</h5>
         <p class="card-text text">Noding benefits in security,<br> data storage and long term sustainability.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup3')">More information</a>
       </div>
     </div>
 
@@ -134,7 +135,7 @@
       <div class="card-body">
         <h5 class="card-title">Blockchain & Cloud</h5>
         <p class="card-text text">Security and transparency.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup4')">More information</a>
       </div>
     </div>
 
@@ -143,7 +144,7 @@
       <div class="card-body">
         <h5 class="card-title">AI-powered analytics</h5>
         <p class="card-text text">Get insights into your data with our AI-powered analytics.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup5')">More information</a>
       </div>
     </div>
 
@@ -152,7 +153,7 @@
       <div class="card-body">
         <h5 class="card-title">Mobile app development</h5>
         <p class="card-text text">Let us build a mobile app for your business.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup6')">More information</a>
       </div>
     </div>
 
@@ -161,11 +162,82 @@
       <div class="card-body">
         <h5 class="card-title">Web development</h5>
         <p class="card-text text">We can build a website for your business.</p>
-        <a href="#" class="btn btn-primary">More information</a>
+        <a href="#" class="btn btn-primary" onclick="showPopup('popup7')">More information</a>
       </div>
     </div>
   </section>
 
+  <!-- Divs de los pop ups que figuran ocultos hasta que se haga click-->
+
+  <div id="popup1" class="popup-container">
+    <div class="popup-content">
+        <h1 class="popup-title">Big Data</h1>
+        <h2>How we work and store information</h2>
+      <p class="popup-text">In the era of digitalization, data has become a precious commodity. Big Data refers to the massive volumes of structured and unstructured data that organizations collect on a daily basis. The challenge lies not just in storing this data but also in analyzing it to gain valuable insights. At our company, we specialize in handling Big Data effectively. Our experts use advanced analytics tools and technologies to process, manage, and derive meaningful patterns from the vast amount of information. By harnessing the power of Big Data, we help businesses make data-driven decisions and stay ahead in the competitive landscape.</p>
+      <button class="btn-close" onclick="hidePopup('popup1')"></button>   
+     </div>
+  </div>
+
+  <div id="popup2" class="popup-container">
+    <div class="popup-content">
+        <h1 class="popup-title">Cloud Computing</h1>
+        <h2>How we connect and store data through our software</h2>
+      <p class="popup-text">Cloud Computing has revolutionized the way businesses operate and store their data. Rather than relying on traditional on-premises servers, cloud technology offers flexible and scalable solutions. Our software solutions are built on the cloud, ensuring seamless access to your data from anywhere, anytime. Whether you need to collaborate with your team, store critical files securely, or run resource-intensive applications, our cloud-based approach guarantees reliability, cost-effectiveness, and enhanced productivity.</p>
+      <button class="btn-close" onclick="hidePopup('popup2')"></button>   
+     </div>
+  </div>
+
+  <div id="popup3" class="popup-container">
+    <div class="popup-content">
+        <h1 class="popup-title">Decentralized Cloud</h1>
+        <h2>Noding benefits in security, data storage, and long-term sustainability</h2>
+      <p class="popup-text">The future of cloud computing lies in decentralization, and our services reflect this vision. Decentralized Cloud removes the dependency on a single central authority, ensuring enhanced security and data privacy. By distributing data across a network of nodes, we ensure data redundancy, reducing the risk of data loss. Moreover, decentralized cloud solutions contribute to long-term sustainability by optimizing resource usage and reducing energy consumption. Embrace the decentralized cloud to safeguard your data and experience an eco-friendly approach to cloud computing.</p>
+      <button class="btn-close" onclick="hidePopup('popup3')"></button>   
+     </div>
+  </div>
+
+  <div id="popup4" class="popup-container">
+    <div class="popup-content">
+        <h1 class="popup-title">Blockchain & Cloud</h1>
+        <h2>Security and transparency combined</h2>
+      <p class="popup-text">Blockchain technology is synonymous with security and transparency, and we've integrated it with our cloud services. By leveraging blockchain's immutable and decentralized nature, we ensure that your data remains tamper-proof and verifiable. Each transaction and interaction with your data is recorded on the blockchain, providing an audit trail of all activities. This innovative fusion of cloud and blockchain technology enhances the trustworthiness of your data, making it ideal for applications that require utmost security and transparency.</p>
+      <button class="btn-close" onclick="hidePopup('popup4')"></button>   
+     </div>
+  </div>
+
+  <div id="popup5" class="popup-container">
+    <div class="popup-content">
+        <h1 class="popup-title">AI-powered analytics</h1>
+        <h2>Get insights into your data with our AI-powered analytics</h2>
+      <p class="popup-text">Data becomes valuable when it's transformed into actionable insights. Our AI-powered analytics solutions offer advanced data processing and predictive analysis capabilities. By using machine learning algorithms, we uncover hidden patterns and trends within your data, enabling you to make informed decisions. Whether it's customer behavior analysis, market forecasting, or optimizing business processes, our AI-driven approach empowers you to stay competitive and capitalize on opportunities.</p>
+      <button class="btn-close" onclick="hidePopup('popup5')"></button>   
+     </div>
+  </div>
+
+  <div id="popup6" class="popup-container">
+    <div class="popup-content">
+        <h1 class="popup-title">Mobile app development</h1>
+        <h2>Let us build a mobile app for your business</h2>
+      <p class="popup-text">In today's mobile-centric world, having a mobile app for your business is essential. Our mobile app development services cater to a diverse range of industries and requirements. From user-friendly interfaces to seamless performance, our team of skilled developers ensures that your app delivers a top-notch user experience. We tailor the app to your specific needs, whether it's an e-commerce platform, a productivity tool, or a customer engagement application. Let us bring your app idea to life and expand your reach to the ever-growing mobile audience.</p>
+      <button class="btn-close" onclick="hidePopup('popup6')"></button>   
+     </div>
+  </div>
+
+     <div id="popup7" class="popup-container">
+      <div class="popup-content">
+          <h1 class="popup-title">Web development</h1>
+          <h2>We can build a website for your business</h2>
+        <p class="popup-text">A well-designed website is the digital face of your business. Our web development services focus on creating captivating, responsive, and user-friendly websites that reflect your brand's identity. Whether you need a simple informational site or a complex e-commerce platform, our web development team has the expertise to deliver exceptional results. With a strong emphasis on aesthetics, functionality, and SEO optimization, we ensure that your website attracts visitors, engages them effectively, and drives meaningful conversions. Trust us to build a website that elevates your online presence and drives business growth.</p>
+        <button class="btn-close" onclick="hidePopup('popup7')"></button>   
+       </div>
+  </div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup1')"></div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup2')"></div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup3')"></div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup4')"></div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup5')"></div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup6')"></div>
+  <div class="overlay" id="overlay" onclick="hidePopup('popup7')"></div>
   <div class="container container-espacioDiv">
   
     <div class="row">
@@ -307,6 +379,7 @@
   </section>
 
 
+
   <!-- Start of LiveChat (www.livechat.com) code -->
 <script>
   window.__lc = window.__lc || {};
@@ -316,8 +389,7 @@
 <noscript><a href="https://www.livechat.com/chat-with/15501666/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 <!-- End of LiveChat code -->
 
-
-<script src="script.js"></script>
+<script src="./scripts.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/20dbc68d3e.js" crossorigin="anonymous"></script>
@@ -350,13 +422,13 @@
         
             <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Shared Nodes</a>
+              <a href="#!" class="text-white"  onclick="showPopup('popup3')">Shared Nodes</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Cloud Storage</a>
+              <a href="#!" class="text-white"  onclick="showPopup('popup2')">Cloud Storage</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Cloud Security</a>
+              <a href="#!" class="text-white"  onclick="showPopup('popup4')">Cloud Security</a>
             </li>
             </ul>
           </div>

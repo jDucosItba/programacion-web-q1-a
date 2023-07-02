@@ -1,3 +1,16 @@
+
+function showPopup(popupId) {
+  const popup = document.getElementById(popupId);
+  popup.style.display = "flex";
+}
+
+function hidePopup(popupId) {
+  const popup = document.getElementById(popupId);
+  popup.style.display = "none";
+}
+
+
+
 // Obtener los elementos de los botones de los planes de suscripción
 const planButtons = document.querySelectorAll('.card-body .btn');
 
