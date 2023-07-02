@@ -37,6 +37,8 @@
 				<li class="nav-item">
 				  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 				  <a class="nav-link active" aria-current="page" href="sesion.html">Login</a>
+				  <a href="#" class="nav-link active" onclick="showPopup('popup_aboutUs')">About Us</a>
+            <a href="#" class="nav-link active" onclick="showPopup('popup_team')">Team</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -186,7 +188,26 @@
 				<p class="small">&copy; 2023 Chain Blocc. All rights reserved.</p>
 				<p class="small">Developed by <a href="https://www.github.com/JoaquinDucos" target="_blank" class="text-white">Joaquin Ducos</a></p>
 			</div>
-			
+			<div id="popup_aboutUs" class="popup-container" style="color: black;">
+				<div class="popup-content">
+					<h1 class="popup-title">About Us</h1>
+					<h2>What do we do?</h2>
+				  <p class="popup-text">Welcome to our cutting-edge DeFi and Blockchain Cloud Service. We prioritize security and sustainability, revolutionizing cloud technology. <br> By combining DeFi principles and blockchain, we ensure data integrity and transparency. Our platform utilizes advanced encryption and authentication methods to protect your information. Moreover, our decentralized approach optimizes resource usage, reducing energy consumption for a greener future. Experience the best of both worlds - security and sustainability - with our personalized support and scalable solutions. Join us in redefining cloud technology for a secure and eco-friendly digital future.</p>
+				  <button class="btn-close" onclick="hidePopup('popup_aboutUs')"></button>   
+				 </div>
+			  </div>
+			  <div id="popup_team" class="popup-container">
+				<div class="popup-content" style="color: black;">
+					<h1 class="popup-title">Team</h1>
+					<h2>Member/s</h2>
+					<img src="./img/JDucos_foto_cv.jpeg" alt="Team Member Joaquín Ducos">
+				  <p class="popup-text">Meet Joaquín Ducos, our exceptional Team member! <br> A Business Management & Technology student with a flair for programming. Joaquín's dedication shines through his web development and server management skills. With his passion for innovation, he ensures we stay ahead in the digital realm. Join us in celebrating Joaquín's talents as he enhances our mission to deliver exceptional results for our clients.</p>
+				  <button class="btn-close" onclick="hidePopup('popup_team')"></button>   
+				 </div>
+			  </div>
+
+			  <div class="overlay" id="overlay" onclick="hidePopup('popup_aboutUs')"></div>
+			  <div class="overlay" id="overlay" onclick="hidePopup('popup_team')"></div>
 		  </footer>
 <script src="https://kit.fontawesome.com/20dbc68d3e.js" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
