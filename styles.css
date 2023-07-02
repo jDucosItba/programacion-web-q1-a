@@ -56,19 +56,29 @@ header{
   justify-content: center;
 }
 
+
 .popup-content {
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 20px;
   background-color: #fff;
+  margin-top: 50px;
   border-radius: 10px;
   width: 100%; /* Ajusta el tamaño del pop-up */
-  max-width: 400px;
+  max-width: 210rem;
   align-items: center;
   transform: scale(0.8); /* Ajusta el tamaño inicial del pop-up */
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 11;
   overflow-y: auto;
+ 
+}
+.popup-content h1, h2 {
+text-align: center;
+}
+.popup-content p {
+margin-left: 25px;
+margin-right: 25px;
 }
 .popup-container::before {
   content: '';
@@ -81,6 +91,26 @@ header{
   filter: blur(5px); /* Ajusta el valor del blur según desees */
   z-index: -1;
 }
+
+.popup-content img {
+  border-radius: 15px;
+  border: 6px solid #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 16rem;
+  width: 11.5rem;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  filter: blur(8px); /* Aplicamos el efecto de desenfoque por defecto */
+  transition: filter 0.3s ease; /* Añadimos una transición suave */
+}
+
+.popup-content img:hover {
+  filter: blur(0); /* Eliminamos el desenfoque al hacer hover */
+}
+
+
+
 .btn-close {
   display: block;
   margin: 10px auto 0;
