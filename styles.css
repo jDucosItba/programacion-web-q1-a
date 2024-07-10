@@ -30,6 +30,7 @@ header{
   justify-content: space-around;
   background-color: rgb(237, 235, 246);
   width: 100%;
+  overflow: hidden;
 }  
 #producto div{
   font-family: sans-serif;
